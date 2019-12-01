@@ -9,6 +9,12 @@ module.exports = {
       options: {
       plugins: [ `gatsby-remark-images` ],
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.TRACKING_ID,
+      },
     }
   ],
   // Customize your site metadata:
