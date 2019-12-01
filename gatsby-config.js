@@ -4,20 +4,26 @@ module.exports = {
       resolve: `gatsby-theme-blog`,
       options: {},
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+      plugins: [ `gatsby-remark-images` ],
+      }
+    }
   ],
   // Customize your site metadata:
   siteMetadata: {
-    title: `My Blog Title`,
-    author: `My Name`,
+    title: `Exploring Android`,
+    author: `Pavel Vasilev`,
     description: `My site description...`,
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/gatsbyjs`,
+        url: `https://twitter.com/pvasilev96`,
       },
       {
         name: `github`,
-        url: `https://github.com/gatsbyjs`,
+        url: `https://github.com/pavel-vasilev`,
       },
     ],
   },
